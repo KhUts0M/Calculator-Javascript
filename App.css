@@ -8,15 +8,15 @@ body {
 }
 
 #calculator {
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 250px;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   margin-bottom: 10px;
   padding: 10px;
   font-size: 18px;
