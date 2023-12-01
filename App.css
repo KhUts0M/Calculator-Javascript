@@ -32,6 +32,7 @@ button {
   font-size: 18px;
   margin: 5px;
   cursor: pointer;
+  box-shadow: grey;
 }
 
 button.operator {
@@ -47,7 +48,7 @@ button.operator {
 }
 
 .operator[data-value="="] {
-  background-color: #80cbc4;
+  background-color: #f6b327;
   color: white;
   width: 44%;
 }
