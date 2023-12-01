@@ -18,11 +18,11 @@ body {
 }
 
 .display {
-  height: 75px;
+  height: 50px;
   width: 86%;
   margin-bottom: 10px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: right;
 }
 
@@ -32,7 +32,7 @@ button {
   font-size: 18px;
   margin: 5px;
   cursor: pointer;
-  box-shadow: grey;
+  border-radius: 40%;
 }
 
 button.operator {
@@ -49,6 +49,10 @@ button.operator {
 
 .operator[data-value="="] {
   background-color: #f6b327;
-  color: white;
+  color: #000;
   width: 44%;
+  border-radius: 10%;
+}
+.container > div {
+  margin-top: 10px;
 }
