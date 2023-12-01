@@ -8,7 +8,7 @@ body {
   background: #80cbc4;
 }
 
-#calculator {
+.container {
   border: 1px solid black;
   border-radius: 5px;
   padding: 20px;
@@ -17,11 +17,13 @@ body {
   background-color: #244242;
 }
 
-input {
+.display {
+  height: 75px;
   width: 86%;
   margin-bottom: 10px;
   padding: 10px;
   font-size: 18px;
+  text-align: right;
 }
 
 button {
@@ -33,15 +35,19 @@ button {
 }
 
 button.operator {
-  background-color: white;
-}
-
-button.equal {
-  background-color: #80cbc4;
-  color: white;
-  width: 44%;
+  background-color: #ba860c;
 }
 
 .operator {
-  color: blue;
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.operator[data-value="="] {
+  background-color: #80cbc4;
+  color: white;
+  width: 44%;
 }

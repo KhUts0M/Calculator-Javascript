@@ -1,23 +1,6 @@
-function appendToDisplay(value) {
-  document.getElementById("display").value += value;
-}
+const display = document.querySelector(".display");
+const buttons = document.querySelectorAll("button");
 
-function clearDisplay() {
-  document.getElementById("display").value = "";
-}
-
-function applyPercentage() {
-  const currentValue = parseFloat(document.getElementById("display").value);
-  const percentageValue = currentValue / 100;
-  document.getElementById("display").value = percentageValue;
-}
-
-function calculate() {
-  try {
-    document.getElementById("display").value = eval(
-      document.getElementById("display").value
-    );
-  } catch (error) {
-    document.getElementById("display").value = "Error";
-  }
-}
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => console.log(e.target.dataset.value));
+});
